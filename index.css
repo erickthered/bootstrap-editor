@@ -1,3 +1,29 @@
-.css {
-    border-left-color: #ffffff;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+li {
+    margin: 5px;
+    padding: 5px;
+}
+.sortable {
+    min-height: 100px;
+    border: 1px solid #ccc;
+}
+.sortable li {
+    width: 100%;
+}
+#left-bar .preview {
+    display: block;
+}
+#right-bar .preview {
+    display: none;
+}
+#left-bar .view {
+    display: none;
+}
+#right-bar .view {
+    display: block;
 }

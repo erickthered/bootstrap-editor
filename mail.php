@@ -4,7 +4,7 @@ class Test
 {
     public function hola()
     {
-        
+        echo "prueba de esto";
     }
 }
 

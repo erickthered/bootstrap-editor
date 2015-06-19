@@ -1,9 +1,84 @@
-<html>
+<!doctype html>
+<html lang="es">
     <head>
+        <meta charset="utf-8">
+        <title>Sandbox</title>
+        <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
     </head>
     <body>
-        <h1>Dev Luis</h1>
-        <h2>Dev Luis</h2>
-        <h3>Dev Luis</h3>
+        <div class="row">
+            <div id="left-bar" class="col-md-3">
+                <h2>Grid</h2>
+                <ul>
+                  <li class="draggable ui-state-highlight">
+                      <div class="preview">
+                          12
+                      </div>
+                      <div class="view row">
+                          <div class="col-md-12">
+                              col-md-12
+                          </div>
+                      </div>
+                  </li>
+                  <li class="draggable ui-state-highlight">
+                      <div class="preview">
+                          6 - 6
+                      </div>
+                      <div class="view row">
+                          <div class="col-md-6">
+                              col-md-6
+                          </div>
+                          <div class="col-md-6">
+                              col-md-6
+                          </div>
+                      </div>
+                  </li>
+                  <li class="draggable ui-state-highlight">
+                      <div class="preview">
+                          8 - 4
+                      </div>
+                      <div class="view row">
+                          <div class="col-md-8">
+                              col-md-8
+                          </div>
+                          <div class="col-md-4">
+                              col-md-4
+                          </div>
+                      </div>
+                  </li>
+                  <li class="draggable ui-state-highlight">
+                      <div class="preview">
+                          4 - 4 - 4
+                      </div>
+                      <div class="view row">
+                          <div class="sortable col-md-4">
+                              col-md-4
+                          </div>
+                          <div class="sortable col-md-4">
+                              col-md-4
+                          </div>
+                          <div class="sortable col-md-4">
+                              col-md-4
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+            </div>
+
+            <div id="right-bar" class="col-md-9">
+                <h2>Container</h2>
+                <ul class="container sortable">
+                    container
+                </ul>
+            </div>
+        </div>
+         
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>
