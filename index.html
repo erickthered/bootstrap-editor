@@ -4,74 +4,169 @@
         <meta charset="utf-8">
         <title>Sandbox</title>
         <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link href="index.css" rel="stylesheet">
     </head>
     <body>
-        <div class="row">
-            <div id="left-bar" class="col-md-3">
-                <h2>Grid</h2>
-                <ul>
-                  <li class="draggable ui-state-highlight">
-                      <div class="preview">
-                          12
-                      </div>
-                      <div class="view row">
-                          <div class="col-md-12">
-                              col-md-12
+        <div class="container">
+            <div class="row">
+                <div id="left-bar" class="col-md-3">
+                    <h2>Disposición</h2>
+                    <div>
+                      <div class="draggable">
+                          <div class="preview">
+                              12
+                          </div>
+                          <div class="view row">
+                              <div class="col-md-12 column">
+                                    <!--<a href="#close" class="remove label label-danger">-->
+                                    <!--    <i class="glyphicon glyphicon-remove"></i> quitar -->
+                                    <!--</a>-->
+                                    col-md-12
+                              </div>
                           </div>
                       </div>
-                  </li>
-                  <li class="draggable ui-state-highlight">
-                      <div class="preview">
-                          6 - 6
-                      </div>
-                      <div class="view row">
-                          <div class="col-md-6">
-                              col-md-6
+                      <div class="draggable">
+                          <div class="preview">
+                              4 - 8
                           </div>
-                          <div class="col-md-6">
-                              col-md-6
-                          </div>
-                      </div>
-                  </li>
-                  <li class="draggable ui-state-highlight">
-                      <div class="preview">
-                          8 - 4
-                      </div>
-                      <div class="view row">
-                          <div class="col-md-8">
-                              col-md-8
-                          </div>
-                          <div class="col-md-4">
-                              col-md-4
+                          <div class="view row">
+                              <div class="col-md-4 column">
+                                  col-md-4
+                              </div>
+                              <div class="col-md-8 column">
+                                  col-md-8
+                              </div>
                           </div>
                       </div>
-                  </li>
-                  <li class="draggable ui-state-highlight">
-                      <div class="preview">
-                          4 - 4 - 4
-                      </div>
-                      <div class="view row">
-                          <div class="sortable col-md-4">
-                              col-md-4
+                      <div class="draggable">
+                          <div class="preview">
+                              6 - 6
                           </div>
-                          <div class="sortable col-md-4">
-                              col-md-4
-                          </div>
-                          <div class="sortable col-md-4">
-                              col-md-4
+                          <div class="view row">
+                              <div class="col-md-6 column">
+                                  col-md-6
+                              </div>
+                              <div class="col-md-6 column">
+                                  col-md-6
+                              </div>
                           </div>
                       </div>
-                  </li>
-                </ul>
-            </div>
-
-            <div id="right-bar" class="col-md-9">
-                <h2>Container</h2>
-                <ul class="container sortable">
-                    container
-                </ul>
+                      <div class="draggable">
+                          <div class="preview">
+                              8 - 4
+                          </div>
+                          <div class="view row">
+                              <div class="col-md-8 column">
+                                  col-md-8
+                              </div>
+                              <div class="col-md-4 column">
+                                  col-md-4
+                              </div>
+                          </div>
+                      </div>
+                      <div class="draggable">
+                          <div class="preview">
+                              4 - 4 - 4
+                          </div>
+                          <div class="view row">
+                              <div class="col-md-4 column">
+                                  col-md-4
+                              </div>
+                              <div class="col-md-4 column">
+                                  col-md-4
+                              </div>
+                              <div class="col-md-4 column">
+                                  col-md-4
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+    
+                    <h2>Elementos</h2>
+                    <div>
+                        <div class="draggable">
+                            <div class="preview">
+                                Título
+                            </div>
+                            <div class="view">
+                                <h3>Título de Contenido</h3>
+                            </div>
+                        </div>
+                        <div class="draggable">
+                            <div class="preview">
+                                Tabla
+                            </div>
+                            <div class="view">
+                                <table class="table">
+                                    <caption>Optional table caption.</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="draggable">
+                            <div class="preview">
+                                Párrafo
+                            </div>
+                            <div class="view">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donec fringilla lorem at lacus malesuada vulputate. Sed pulvinar
+                                aliquet metus, eu molestie orci vehicula nec. Nullam sed dapibus
+                                leo, et dignissim ex. Vestibulum molestie est sit amet mauris
+                                maximus, eget placerat nibh aliquam. Morbi at sodales augue,
+                                a vestibulum enim. Phasellus odio ex, lobortis sit amet dignissim
+                                et, vehicula sed est. In ullamcorper orci eget nibh tempor, ut
+                                maximus dolor tincidunt. Vestibulum euismod nibh a feugiat
+                                fermentum. Proin varius luctus purus et blandit. Duis et metus
+                                nec tellus suscipit gravida. Pellentesque feugiat at orci eget
+                                porttitor. Nunc dictum magna non vehicula fringilla.</p>
+                            </div>
+                        </div>
+                        <div class="draggable">
+                            <div class="preview">
+                                Imagen
+                            </div>
+                            <div class="view">
+                                <img src="https://farm4.staticflickr.com/3423/3982999065_6fec73ed0b_b.jpg" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-9 column">
+                    <div id="content" class="column">
+                        container
+                        <div class="clearfix ui-state-disabled"></div>
+                    </div>
+                    <div class="clearfix ui-state-disabled"></div>
+                </div>
             </div>
         </div>
          
