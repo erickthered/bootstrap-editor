@@ -2,12 +2,6 @@ function randomNumber() {
     Math.floor(Math.random() * (1000000) + 1);
 }
 
-function handleUpdates() {
-    handleCarousels();
-    handleEditables();
-    handleModals();
-}
-
 function handleModals() {
 	var elm = $('#content #modal');
 	var btn = $('#content #btnModal');
@@ -40,6 +34,12 @@ function handleEditables() {
     $('#content .editable').blur(function(event) {
         $(event.target.id).prop('contenteditable', false);
     });
+}
+
+function handleUpdates() {
+    handleCarousels();
+    handleEditables();
+    handleModals();
 }
 
 $(function() {
