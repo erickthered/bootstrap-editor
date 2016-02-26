@@ -48,7 +48,7 @@ $(function() {
 		opacity : 0.35,
 		handle: ".drag"
     });
-    
+
     $( ".draggable" ).draggable({
         connectToSortable: ".column",
         helper: "clone",
@@ -56,12 +56,11 @@ $(function() {
 			ui.helper.width('auto');
 		},
 		stop: function( event, ui ) {
-			$('#content .column').sortable({ 
+			$('#content .column').sortable({
 				opacity : 0.35,
 				connectWith: '.column',
                 handle: ".drag"
 			});
-			console.log(event.target.id);
 			handleUpdates();
 		}
     });

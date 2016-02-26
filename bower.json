@@ -1,0 +1,31 @@
+{
+  "name": "bootstrap-editor",
+  "homepage": "https://github.com/erickthered/bootstrap-editor",
+  "authors": [
+    "Erick Rojas <erickrojaz@gmail.com>"
+  ],
+  "description": "Bootstrap editor is an experiment that aims to create a drag and drop interface for Twitter's Bootstrap",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "bootstrap",
+    "editor",
+    "html5",
+    "css",
+    "editor"
+  ],
+  "license": "GPL",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.1",
+    "jquery-ui": "^1.11.4"
+  }
+}

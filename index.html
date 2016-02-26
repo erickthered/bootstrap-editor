@@ -6,9 +6,9 @@
         <meta name="description" content="A basic bootstrap editor written in plain HTML, Javascript (jQuery) and CSS">
         <meta name="keywords" content="Javascript Bootstrap Editor">
         <meta name="author" content="Erick Rojas">
-        <link href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-        <link href="index.css" rel="stylesheet">
+        <link href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -102,7 +102,7 @@
                             </div>
                         </li>
                     </ul>
-    
+
                     <h2>Elementos</h2>
                     <ul class="list-group">
                         <li class="list-group-item">
@@ -201,12 +201,12 @@
                                     <i class="glyphicon glyphicon-modal-window"></i> Diálogo
                                 </div>
                                 <div class="view">
-    
+
                                     <!-- Button trigger modal -->
                                     <button type="button" class="editable btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="btnModal">
                                         Mostrar diálogo
                                     </button>
-                                    
+
                                     <!-- Modal -->
                                     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                       <div class="modal-dialog" role="document">
@@ -225,7 +225,7 @@
                                         </div>
                                       </div>
                                     </div>
-    
+
                                 </div>
                             </div>
                         </li>
@@ -237,7 +237,7 @@
                                     <i class="glyphicon glyphicon-blackboard"></i> Carrusel
                                 </div>
                                 <div class="view">
-    
+
                                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                                       <!-- Indicators -->
                                       <ol class="carousel-indicators">
@@ -245,7 +245,7 @@
                                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                                         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                                       </ol>
-                                     
+
                                       <!-- Wrapper for slides -->
                                       <div class="carousel-inner">
                                         <div class="item active">
@@ -267,7 +267,7 @@
                                           </div>
                                         </div>
                                       </div>
-                                     
+
                                       <!-- Controls -->
                                       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -276,7 +276,7 @@
                                         <span class="glyphicon glyphicon-chevron-right"></span>
                                       </a>
                                     </div> <!-- Carousel -->
-    
+
                                 </div>
                             </div>
                         </li>
@@ -313,11 +313,11 @@
                             </div>
                         </li>
                     </ul>
-                    
+
                     Esta herramienta ha sido creada por Erick Rojas para Believe Digital.
                     Puede ser Utilizada bajo los términos de la <a href="LICENSE.txt">Licencia GNU GPL v2</a></p>
                 </div>
-    
+
                 <div class="col-md-9 column">
                     <ul class="nav nav-pills">
                         <li role="presentation" class="active"><a href="#">Editor</a></li>
@@ -333,11 +333,11 @@
                 </div>
             </div>
         </div>
-         
-        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="app.js"></script>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
