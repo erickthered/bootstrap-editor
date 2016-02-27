@@ -1,9 +1,13 @@
+*Last Update: 2016-02-27*
+
 # Bootstrap Editor
 
 Bootstrap editor is an experiment that aims to create a drag and drop interface for Twitter's Bootstrap,
 it uses:
 
-* jQuery 1.11
+* boostrap (obviously)
+* jquery
+* jquery-ui
 * HTML5
 * CSS3
 

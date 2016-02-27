@@ -13,7 +13,7 @@
 
 #content {
     min-height: 470px;
-    border: 1px solid #ff0000;
+    // border: 1px solid #ff0000;
     border-radius: 5px;
     height: auto;
 }
@@ -31,6 +31,7 @@
     border: 1px solid #eeeeee;
     border-radius: 5px;
     width: auto;
+    height: auto !important;
 }
 #content .view {
     display: block;
@@ -64,4 +65,8 @@
 }
 #content .div {
     height: auto;
+}
+
+#preview, #preview .drag, #preview .remove, #preview .preview {
+    display: none;
 }
