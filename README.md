@@ -7,7 +7,7 @@ it uses:
 
 * boostrap (obviously)
 * jquery
-* jquery-ui
+* jquery-ui (draggable and sortable features)
 * HTML5
 * CSS3
 
