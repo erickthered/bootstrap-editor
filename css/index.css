@@ -10,6 +10,9 @@
 #left-bar .remove {
     display: none;
 }
+#left-bar .edit {
+    display: none;
+}
 
 #content {
     min-height: 470px;
@@ -44,7 +47,7 @@
     border-radius: 4px;
     margin: 15px 0;
     position: relative;
-    padding: 25px 14px 0;
+    padding: 14px 14px 0;
     height: auto;
 }
 #content .column {
@@ -63,10 +66,13 @@
 #content .remove {
     float: right;
 }
+#content .edit {
+    float: right;
+}
 #content .div {
     height: auto;
 }
 
-#preview, #preview .drag, #preview .remove, #preview .preview {
+#preview, #preview .drag, #preview .remove, #preview .preview, #preview .edit {
     display: none;
 }

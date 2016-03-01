@@ -8,18 +8,44 @@
         <meta name="author" content="Erick Rojas">
         <link href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
         <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
+        <!-- Modal -->
+        <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="editable modal-title" id="myModalLabel">Configuración</h4>
+              </div>
+              <div class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="editable btn btn-default" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="editable btn btn-primary">Guardar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="container">
             <div class="row">
-                <div id="left-bar" class="col-md-3">
+                <div id="left-bar" class="col-md-2">
                     <h2>Disposición</h2>
                     <ul class="list-group">
                         <li class="list-group-item">
                             <div class="draggable">
-                              <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                              <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                              <a href="#close" class="remove label label-danger">
+                                  <i class="glyphicon glyphicon-remove"></i>
+                              </a>
+                              <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                              </a>
+                              <span class="drag label label-default ui-draggable-handle">
+                                  <i class="glyphicon glyphicon-move"></i>
+                              </span>
                               <div class="preview">
                                   12
                               </div>
@@ -31,8 +57,11 @@
                         </li>
                         <li class="list-group-item">
                             <div class="draggable">
-                              <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                              <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                              <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                              <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                              </a>
+                              <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                               <div class="preview">
                                   4 - 8
                               </div>
@@ -46,8 +75,11 @@
                         </li>
                         <li class="list-group-item">
                             <div class="draggable">
-                              <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                              <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                              <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                              <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                              </a>
+                              <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                               <div class="preview">
                                   6 - 6
                               </div>
@@ -61,8 +93,11 @@
                         </li>
                         <li class="list-group-item">
                             <div class="draggable">
-                              <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                              <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                              <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                              <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                              </a>
+                              <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                               <div class="preview">
                                   8 - 4
                               </div>
@@ -76,8 +111,11 @@
                         </li>
                         <li class="list-group-item">
                             <div class="draggable">
-                              <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                              <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                              <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                              <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                              </a>
+                              <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                               <div class="preview">
                                   4 - 4 - 4
                               </div>
@@ -97,8 +135,11 @@
                     <ul class="list-group">
                         <li class="list-group-item">
                             <div class="draggable">
-                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                                </a>
+                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                                 <div class="preview">
                                     <i class="glyphicon glyphicon-header"></i> Título
                                 </div>
@@ -109,8 +150,11 @@
                         </li>
                         <li class="list-group-item">
                             <div class="draggable">
-                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                                </a>
+                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                                 <div class="preview">
                                     <i class="glyphicon glyphicon-th"></i> Tabla
                                 </div>
@@ -151,8 +195,11 @@
                         </li>
                         <li class="list-group-item">
                             <div class="draggable">
-                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                                </a>
+                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                                 <div class="preview">
                                     <i class="glyphicon glyphicon-align-left"></i> Párrafo
                                 </div>
@@ -173,8 +220,11 @@
                         </li>
                         <li class="list-group-item">
                             <div class="draggable">
-                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                                </a>
+                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                                 <div class="preview">
                                     <i class="glyphicon glyphicon-picture"></i> Imagen
                                 </div>
@@ -185,8 +235,11 @@
                         </li>
                         <li class="list-group-item">
                             <div class="draggable">
-                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                                </a>
+                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                                 <div class="preview">
                                     <i class="glyphicon glyphicon-modal-window"></i> Diálogo
                                 </div>
@@ -221,8 +274,11 @@
                         </li>
                         <li class="list-group-item">
                             <div class="draggable">
-                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                                </a>
+                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                                 <div class="preview">
                                     <i class="glyphicon glyphicon-blackboard"></i> Carrusel
                                 </div>
@@ -272,8 +328,11 @@
                         </li>
                         <li class="list-group-item">
                             <div class="draggable">
-                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                                </a>
+                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                                 <div class="preview">
                                     <i class="glyphicon glyphicon-comment"></i> Jumbotron
                                 </div>
@@ -288,8 +347,11 @@
                         </li>
                         <li class="list-group-item">
                             <div class="draggable">
-                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i> Quitar</a>
-                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i> Mover</span>
+                                <a href="#close" class="remove label label-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                                <a href="#edit" class="edit label label-primary">
+                                  <i class="glyphicon glyphicon-pencil"></i>
+                                </a>
+                                <span class="drag label label-default ui-draggable-handle"><i class="glyphicon glyphicon-move"></i></span>
                                 <div class="preview">
                                     <i class="glyphicon glyphicon-th-list"></i> Listado
                                 </div>
@@ -308,7 +370,7 @@
                     Puede ser Utilizada bajo los términos de la <a href="LICENSE.txt">Licencia GNU GPL v2</a></p>
                 </div>
 
-                <div class="col-md-9 column">
+                <div class="col-md-10 column">
                     <ul class="nav nav-pills">
                         <li role="presentation" class="active"><a href="#" id="btn-edit">Editor</a></li>
                         <li role="presentation"><a href="#" id="btn-preview">Previsualización</a></li>

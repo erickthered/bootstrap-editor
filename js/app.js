@@ -48,6 +48,9 @@ function handleEvents() {
             elements[i].setAttribute('configured', 1);
         }
     });
+    $('.edit').click(function(e) {
+        $('#settings').modal();
+    });
 }
 
 function handleUpdates() {
