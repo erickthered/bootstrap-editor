@@ -91,18 +91,22 @@ $(function() {
 
     $("#btn-preview").click(function() {
         $('#content').hide('slow', function() {
-            updatePreview();
-            $('#preview').show('slow');
-            $('#btn-edit').parent().removeClass('active');
-            $('#btn-preview').parent().addClass('active');
+            $('#left-bar').fadeOut('fast', function() {
+                updatePreview();
+                $('#preview').show('slow');
+                $('#btn-edit').parent().removeClass('active');
+                $('#btn-preview').parent().addClass('active');
+            });
         });
     });
 
     $("#btn-edit").click(function() {
         $('#preview').hide('slow', function() {
-            $('#btn-preview').parent().removeClass('active');
-            $('#btn-edit').parent().addClass('active');
-            $('#content').show('slow');
+            $('#left-bar').fadeIn('fast', function() {
+                $('#btn-preview').parent().removeClass('active');
+                $('#btn-edit').parent().addClass('active');
+                $('#content').show('slow');
+            });
         });
     });
 });
