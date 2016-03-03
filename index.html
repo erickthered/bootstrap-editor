@@ -8,7 +8,7 @@
         <meta name="author" content="Erick Rojas">
         <link href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css" rel="stylesheet">
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
@@ -37,7 +37,13 @@
                         <a href="#" id="btn-edit">Editor</a>
                     </li>
                     <li>
-                        <a href="#" id="btn-preview">Previsualización</a>
+                        <a href="#" id="btn-preview"><i class="fa fa-desktop"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" id="btn-tablet-preview"><i class="fa fa-tablet"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" id="btn-phone-preview"><i class="fa fa-mobile"></i></a>
                     </li>
                 </ul>
             </div>
@@ -392,9 +398,15 @@
             </div>
         </div>
 
-        <div class="cointainer" id="preview">
-            
+        <div id="preview-container">
+            <div class="cointainer" id="preview">
+            </div>
+            <div class="cointainer" id="tablet-preview">
+            </div>
+            <div class="cointainer" id="mobile-preview">
+            </div>
         </div>
+
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>

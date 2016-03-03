@@ -76,9 +76,9 @@ body {
     height: auto;
 }
 
-#preview, #preview .drag, #preview .remove, #preview .preview, #preview .edit {
+#preview-container, #preview-container .drag, #preview-container .remove, #preview-container .preview, #preview-container .edit {
     display: none;
 }
-#preview .draggable {
+#preview-container .draggable {
     height: auto !important;
 }

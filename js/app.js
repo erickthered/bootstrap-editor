@@ -60,8 +60,32 @@ function handleUpdates() {
     handleEvents();
 }
 
-function updatePreview() {
-    $('#preview').html($('#editor').html());
+function updatePreview(deviceName) {
+    var element;
+    var button;
+
+    switch(deviceName) {
+        case 'tablet':
+            element = $('#tablet-preview');
+            button = $('#btn-tablet-preview');
+            break;
+        case 'mobile':
+            element = $('#mobile-preview');
+            button = $('#btn-mobile-preview');
+            break;
+        default:
+            element = $('#preview');
+            button = $('#btn-preview');
+            break;
+    }
+    element.html($('#editor').html());
+    $('#content').hide('slow', function() {
+        $('#left-bar').fadeOut('fast', function() {
+            $('#preview-container').show('slow');
+            $('#btn-edit').parent().removeClass('active');
+            button.parent().addClass('active');
+        });
+    });
 }
 
 $(function() {
@@ -90,18 +114,23 @@ $(function() {
     $( "ul, li" ).disableSelection();
 
     $("#btn-preview").click(function() {
-        $('#content').hide('slow', function() {
-            $('#left-bar').fadeOut('fast', function() {
-                updatePreview();
-                $('#preview').show('slow');
-                $('#btn-edit').parent().removeClass('active');
-                $('#btn-preview').parent().addClass('active');
-            });
-        });
+        updatePreview('desktop');
+    });
+
+    $("#btn-tablet-preview").click(function() {
+        updatePreview('tablet');
+    });
+
+    $("#btn-mobile-preview").click(function() {
+        updatePreview('mobile');
     });
 
     $("#btn-edit").click(function() {
-        $('#preview').hide('slow', function() {
+        $('#preview-container .container').hide();
+        $('#preview-container').hide('slow', function() {
+            $('#preview').html('');
+            $('#tablet-preview').html('');
+            $('#mobile-preview').html('');
             $('#left-bar').fadeIn('fast', function() {
                 $('#btn-preview').parent().removeClass('active');
                 $('#btn-edit').parent().addClass('active');
